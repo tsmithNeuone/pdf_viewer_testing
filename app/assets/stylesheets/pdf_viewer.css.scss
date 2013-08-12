@@ -1,0 +1,60 @@
+$header_size: 150px;
+$footer_size: 100px;
+
+body, html {
+  margin: 0px;
+  height: 100%;
+  font-family: Arial;
+}
+
+#header{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #afafaf;
+  height: $header_size;
+  width: 100%;
+  z-index: 20;
+}
+
+#main_container{
+  position: absolute;
+  left: 0px;
+  top: $header_size;
+  bottom: $footer_size;
+  right: 0;
+  background-color: #67a100;
+}
+
+.internal_elements{
+  position:absolute;
+  top: 5%;
+  width: 48.5%;
+  height:92%;
+  // margin: 1%;
+  background-color: #3f3f3f;
+}
+
+#left_box{
+  left: 1%;
+}
+
+#right_box{
+  right: 1%;
+}
+
+#inner_right{
+  position:relative;
+  left:10px;
+  width: 90%;
+  height: 90%;
+}
+
+#footer{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: $footer_size;
+  width: 100%;
+  background-color: #afafaf;
+}
